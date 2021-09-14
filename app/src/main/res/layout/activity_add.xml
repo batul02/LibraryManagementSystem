@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/book_name"
+            android:hint="Book Name"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/author_name"
+            android:hint="Author Name"
+            android:layout_below="@+id/book_name"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_year"
+            android:hint="Publication Year"
+            android:layout_below="@+id/author_name"
+            android:inputType="date"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/p_house"
+            android:hint="Publishing House"
+            android:layout_below="@+id/p_year"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dept"
+            android:hint="Department"
+            android:layout_below="@+id/p_house"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/isbn_no"
+            android:hint="ISBN Number"
+            android:layout_below="@+id/dept"
+            android:inputType="number"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_copies"
+            android:hint="No. of copies"
+            android:layout_below="@+id/isbn_no"
+            android:inputType="number"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save_button"
+            android:layout_below="@+id/no_copies"
+            android:layout_centerInParent="true"
+            android:text="Save"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
