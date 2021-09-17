@@ -79,7 +79,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         return cursor;
     }
 
-    void updateData(String name, String author, String year, String phouse, String dept, String isbn, String copies){
+    void updateData(String id, String name, String author, String year, String phouse, String dept, String isbn, String copies){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(COLUMN_NAME, name);
@@ -90,7 +90,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         cv.put(COLUMN_ISBN, isbn);
         cv.put(COLUMN_COPIES, copies);
 
-        long result = db.update(TABLE_NAME, cv, "book_name=?", new String[]{name});
+        long result = db.update(TABLE_NAME, cv, "book_id=?", new String[]{id});
         if(result==-1){
             Toast.makeText(context, "Failed to update.", Toast.LENGTH_SHORT).show();
         }else {
@@ -98,9 +98,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
-    void deleteOneRow(String name){
+    void deleteOneRow(String id){
         SQLiteDatabase db = this.getWritableDatabase();
-        long result = db.delete(TABLE_NAME, "book_name=?", new String[]{name});
+        long result = db.delete(TABLE_NAME, "book_id=?", new String[]{id});
         if(result==-1){
             Toast.makeText(context, "Failed to delete.", Toast.LENGTH_SHORT).show();
         }else {

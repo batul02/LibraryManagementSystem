@@ -13,6 +13,12 @@
         android:layout_centerInParent="true"
         android:layout_margin="10dp" >
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/book_id"
+            android:visibility="gone"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -17,17 +17,18 @@ import java.util.ArrayList;
 
 public class UpdateActivity extends AppCompatActivity {
 
-    EditText author_name2, p_year2, p_house2, dept2, isbn_no2, copies2;
+    EditText book_name2, author_name2, p_year2, p_house2, dept2, isbn_no2, copies2;
     Button update_btn, del_btn;
-    TextView book_name2;
+    TextView book_id2;
 
-    String name, author, year, house, deptm, isbn, no_copies;
+    String id, name, author, year, house, deptm, isbn, no_copies;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
+        book_id2 = findViewById(R.id.book_id2);
         book_name2 = findViewById(R.id.book_name2);
         author_name2 = findViewById(R.id.author_name2);
         p_year2 = findViewById(R.id.p_year2);
@@ -48,6 +49,7 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
+                id = book_id2.getText().toString().trim();
                 name = book_name2.getText().toString().trim();
                 author = author_name2.getText().toString().trim();
                 year = p_year2.getText().toString().trim();
@@ -56,7 +58,7 @@ public class UpdateActivity extends AppCompatActivity {
                 isbn = isbn_no2.getText().toString().trim();
                 no_copies = copies2.getText().toString().trim();
 
-                myDB.updateData(name, author, year, house, deptm, isbn, no_copies);
+                myDB.updateData(id, name, author, year, house, deptm, isbn, no_copies);
                 finish();
             }
         });
@@ -70,7 +72,8 @@ public class UpdateActivity extends AppCompatActivity {
     }
 
     void getAndSetIntentData(){
-        if(getIntent().hasExtra("name") &&
+        if(getIntent().hasExtra("id") &&
+                getIntent().hasExtra("name") &&
                 getIntent().hasExtra("author") &&
                 getIntent().hasExtra("year") &&
                 getIntent().hasExtra("house") &&
@@ -78,6 +81,7 @@ public class UpdateActivity extends AppCompatActivity {
                 getIntent().hasExtra("isbn") &&
                 getIntent().hasExtra("copies")){
             //getting data from intent
+            id = getIntent().getStringExtra("id");
             name = getIntent().getStringExtra("name");
             author = getIntent().getStringExtra("author");
             year = getIntent().getStringExtra("year");
@@ -87,6 +91,7 @@ public class UpdateActivity extends AppCompatActivity {
             no_copies = getIntent().getStringExtra("copies");
 
             //setting data from intent
+            book_id2.setText(id);
             book_name2.setText(name);
             author_name2.setText(author);
             p_year2.setText(year);
@@ -107,7 +112,7 @@ public class UpdateActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 MyDatabaseHelper myDB = new MyDatabaseHelper(UpdateActivity.this);
-                myDB.deleteOneRow(name);
+                myDB.deleteOneRow(id);
                 finish();
             }
         });

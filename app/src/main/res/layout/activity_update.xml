@@ -13,11 +13,16 @@
         android:layout_margin="10dp" >
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/book_id2"
+            android:visibility="gone"/>
+
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/book_name2"
             android:hint="Book Name"
-            android:visibility="gone"
             android:layout_margin="10dp"/>
 
         <EditText

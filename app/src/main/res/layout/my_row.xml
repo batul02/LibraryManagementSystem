@@ -13,43 +13,53 @@
         android:background="#ffffff">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" >
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="290dp"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:id="@+id/name_layout">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp" >
+                    android:layout_margin="5dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/book_id"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/book_name"
-                        android:textSize="20dp"
-                        android:text="Book Name" />
+                        android:textSize="22dp"
+                        android:text="Book Name"
+                        android:textColor="@color/black"/>
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp">
+                    android:layout_margin="5dp">
 
                     <TextView
                         android:id="@+id/by"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="By : " />
+                        android:text="By : "
+                        android:textSize="18dp"/>
 
                     <TextView
                         android:id="@+id/author_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Author Name" />
+                        android:text="Author Name"
+                        android:textSize="18dp"/>
 
                 </LinearLayout>
 
@@ -58,125 +68,26 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:layout_gravity="center">
 
-                <LinearLayout
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="10dp">
+                    android:id="@+id/edit"
+                    android:src="@drawable/ic_edit"
+                    android:layout_marginRight="10dp"/>
 
-                    <TextView
-                        android:id="@+id/text_year"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Publication Year : " />
-
-                    <TextView
-                        android:id="@+id/p_year"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="P_Year" />
-
-                </LinearLayout>
-
-                <LinearLayout
+                <ImageView
                     android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:layout_height="wrap_content"
-                    android:padding="10dp">
+                    android:id="@+id/delOne"
+                    android:src="@drawable/ic_delete" />
 
-                    <TextView
-                        android:id="@+id/text_house"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Publishing House : " />
-
-                    <TextView
-                        android:id="@+id/p_house"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="P_House" />
-
-                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/text_dept"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="Dept : " />
-
-                <TextView
-                    android:id="@+id/dept"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="Department" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/text_isbn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="ISBN no. : " />
-
-                <TextView
-                    android:id="@+id/isbn_no"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="ISBN" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10dp">
-
-                <TextView
-                    android:id="@+id/text_copy"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="No. of Copies : " />
-
-                <TextView
-                    android:id="@+id/no_copies"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="12dp"
-                    android:text="Copies" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="15dp"
-            android:gravity="center_horizontal"
-            android:text="-------------------------------------------------------------------------------"/>
 
     </LinearLayout>
 

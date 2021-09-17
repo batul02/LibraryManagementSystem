@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         recyclerView = findViewById(R.id.recyclerview);
         empty_bin = findViewById(R.id.empty_bin);
         nodata_txt = findViewById(R.id.nodata_txt);
