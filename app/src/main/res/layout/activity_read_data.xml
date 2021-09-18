@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
-    android:background="#E1DE3FD6"
     tools:context=".ReadDataActivity">
 
     <LinearLayout
@@ -244,6 +243,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/back"
             android:text="Back"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center_horizontal"/>
 
 
