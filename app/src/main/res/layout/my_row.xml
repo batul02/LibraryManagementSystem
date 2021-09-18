@@ -7,16 +7,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="90sp"
         android:orientation="vertical"
-        android:layout_marginTop="12dp"
-        android:background="#ffffff">
+        android:layout_marginTop="10dp"
+        android:background="@color/purple_200">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_book"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dp"/>
+
             <LinearLayout
-                android:layout_width="290dp"
+                android:layout_width="210dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:id="@+id/name_layout">
@@ -24,7 +33,8 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp" >
+                    android:layout_margin="5dp"
+                    android:paddingTop="10dp">
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -87,6 +97,167 @@
 
 
             </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/text_year"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Publication Year"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/colan2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/p_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="P_Year"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/text_house"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="Publishing House"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/colan3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/p_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P_House"
+                android:layout_gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/text_dept"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="Dept"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/colan4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Department"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/text_isbn"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="ISBN no."
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/colan5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/isbn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISBN"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+
+            <TextView
+                android:id="@+id/text_copy"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="No. of Copies"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/colan6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/no_copies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copies"
+                android:textSize="20dp"
+                android:textColor="@color/black"/>
+
         </LinearLayout>
 
     </LinearLayout>

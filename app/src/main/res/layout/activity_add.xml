@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E1DE3FD6"
     tools:context=".AddActivity">
 
     <RelativeLayout
@@ -16,64 +17,64 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/book_id"
+            android:id="@+id/book_id1"
             android:visibility="gone"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/book_name"
+            android:id="@+id/book_name1"
             android:hint="Book Name"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/author_name"
+            android:id="@+id/author_name1"
             android:hint="Author Name"
-            android:layout_below="@+id/book_name"
+            android:layout_below="@+id/book_name1"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/p_year"
+            android:id="@+id/p_year1"
             android:hint="Publication Year"
-            android:layout_below="@+id/author_name"
+            android:layout_below="@+id/author_name1"
             android:inputType="date"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/p_house"
+            android:id="@+id/p_house1"
             android:hint="Publishing House"
-            android:layout_below="@+id/p_year"
+            android:layout_below="@+id/p_year1"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/dept"
+            android:id="@+id/dept1"
             android:hint="Department"
-            android:layout_below="@+id/p_house"
+            android:layout_below="@+id/p_house1"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/isbn_no"
+            android:id="@+id/isbn_no1"
             android:hint="ISBN Number"
-            android:layout_below="@+id/dept"
+            android:layout_below="@+id/dept1"
             android:inputType="number"
             android:layout_margin="10dp"/>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/no_copies"
+            android:id="@+id/no_copies1"
             android:hint="No. of copies"
-            android:layout_below="@+id/isbn_no"
+            android:layout_below="@+id/isbn_no1"
             android:inputType="number"
             android:layout_margin="10dp"/>
 
@@ -81,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/save_button"
-            android:layout_below="@+id/no_copies"
+            android:layout_below="@+id/no_copies1"
             android:layout_centerInParent="true"
             android:text="Save"
             android:layout_margin="10dp"/>

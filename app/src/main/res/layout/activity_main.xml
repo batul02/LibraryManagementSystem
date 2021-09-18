@@ -10,7 +10,7 @@
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F5F5D4"/>
+        android:background="#E1DE3FD6"/>
 
     <ImageView
         android:id="@+id/empty_bin"
